@@ -27,7 +27,8 @@ https://www.kaggle.com/datasets/fredericobreno/play-tennis
 Datasets will be provided already encoded - you do not need to convert labels into integers.
 
 SCORING
-You will be submitting only a binary. Scoring will be 50% Training Speed, 40% Inference Speed, and 10% Accuracy Speed. However, you must score at least 85% on the play tennis dataset in a 5 fold validation on be considered. You are expected to implement your own k-fold validation, though the implementation should be trivial.
+You will be submitting only a binary. Scoring will be 50% Training Speed, 40% Inference Speed, and 10% Accuracy Speed.
+However, you must score 100% in-sample accuracy on the provided tennis dataset to be considered.
 
 Submissions will be in binary form, with exact details coming soon. NO COMPILE TIME TRAINING OR PRELOADING. (sorry ryan). 
 
