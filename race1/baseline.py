@@ -15,7 +15,7 @@ tennis_data.columns = tennis_columns
 car_columns = ["Buying", "Maint", "Doors", "Persons", "Lug_boot", "Safety", "Class"]
 car_data.columns = car_columns
 
-def evaluate_dataset(X, y, dataset_name, runs=100):
+def evaluate_dataset(X, y, dataset_name, runs=1000):
     for col in X.columns:
         X[col] = LabelEncoder().fit_transform(X[col])
     y = LabelEncoder().fit_transform(y)
