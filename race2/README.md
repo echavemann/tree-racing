@@ -39,13 +39,15 @@ All 4 of the same datasets from Race 1 will be considered once again.
 ## SCORING
 
 The exact scoring breakdown will not be revealed prior to the race. However, the following measurements will be considered: 
-Hyperparameter optimization time. Mean Train time. Mean Inference time. Train-Test-Split Accuracy. 
+Hyperparameter optimization time. Mean Train time. Mean Inference time. Train-Test-Split Accuracy. Each metric will be calculated
+as the average number of standard deviations each tree is from the highest scoring time in that category - with the lowest value being 0.
+Lowest weighted score will win.
 
 Additionally, 4 configurations will be provided 24 hours before the beginning of the race - you must confirm your tree can run correctly
 and prove that those 4 configurations are being applied to qualify for racing. 
 
 
-## Submission
+## SUBMISSION
 
 The file `tree.hpp` has been provided, outlining the required API you must implement. The exact submission code will be released at a later date,
 but the general flow is as follows:
