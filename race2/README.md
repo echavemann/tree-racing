@@ -27,7 +27,8 @@ remaining possible features of size SQRT(<number of total features>) can be cons
 This means that every time a split is selected, you must randomly choose between the top k, if splitter is set to random.
 
 For hyperparameter tuning, you can use any method that you desire, though we will be restricting total runtime on the validation set
-to 10 minutes. Any optimization target is allowed. Ensure your configs are trained FROM SCRATCH.
+to 10 minutes (note this is an upper bound, not a reccomended target rutime). Any optimization target is allowed. 
+Ensure your configs are trained FROM SCRATCH.
 
 Non-Naive optimization systems will not be considered - optimization code must be dataset agnostic in all ways.
 
@@ -36,14 +37,16 @@ No outside reference is allowed for parameter details or implementations. The wi
 https://en.wikipedia.org/wiki/Hyperparameter_optimization
 
 ## TESTING
-All 4 of the same datasets from Race 1 will be considered once again.
+All 4 of the same datasets from Race 1 will be considered once again. There may be 1 additional dataset added.
 
 ## SCORING
-
 The exact scoring breakdown will not be revealed prior to the race. However, the following measurements will be considered: 
-Hyperparameter optimization time. Mean Train time. Mean Inference time. Train-Test-Split Accuracy. Each metric will be calculated
-as the average number of standard deviations each tree is from the highest scoring time in that category - with the lowest value being 0.
-Lowest weighted score will win.
+Hyperparameter optimization time. Mean Train time. Mean Inference time. Train-Test-Split Accuracy. All parameters except,
+obviously, hyperparameter optimization time will only be calculated from the optimized tree for each dataset.
+
+Each metric will be calculated
+as the average distance from the highest scoring time in that category, divided by the std of the scores.
+- with the lowest value being 0. Lowest weighted score will win.
 
 Additionally, 4 configurations will be provided 24 hours before the beginning of the race - you must confirm your tree can run correctly
 and prove that those 4 configurations are being applied to qualify for racing. 
