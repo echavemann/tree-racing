@@ -29,6 +29,8 @@ This means that every time a split is selected, you must randomly choose between
 For hyperparameter tuning, you can use any method that you desire, though we will be restricting total runtime on the validation set
 to 10 minutes. Any optimization target is allowed. Ensure your configs are trained FROM SCRATCH.
 
+Non-Naive optimization systems will not be considered - optimization code must be dataset agnostic in all ways.
+
 ## REFERENCE
 No outside reference is allowed for parameter details or implementations. The wikipedia page on hyperparameter tuning is permitted.
 https://en.wikipedia.org/wiki/Hyperparameter_optimization
