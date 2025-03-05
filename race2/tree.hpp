@@ -1,7 +1,10 @@
+#include <map>
+#include <string>
+#include <vector>
 class ID3Tree
 {
 
-ID3Tree(std::map<std::string, std::string>> config)
+ID3Tree(std::map<std::string, std::string> config)
 {
 }
 
@@ -17,7 +20,7 @@ int predict(std::vector<int> & features)
 
 };
 
-ID3Tree optimizeParameters(std::vector<std::vector<int>> & features, std::vector<int> & targets)
+std::map<std::string, std::string> optimizeParameters(std::vector<std::vector<int>> & features, std::vector<int> & targets)
 {
-    return ID3Tree();
+    return {};
 }
